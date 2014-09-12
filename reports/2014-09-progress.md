@@ -1,0 +1,37 @@
+# Gmacs Progress Report 
+## by Athol R. Whitten, September 2014
+
+## Overview
+Gmacs is a statistical catch-at-size population modeling framework. It is designed to be flexible, scalable, useful for both data-limited and data-rich situations, and initially, to improve and support management of the Bering Sea and Aleutian Island (BSAI) crab stocks of Alaska. The project is a collaborative effort between the University of Washington and NOAA Fisheries for the North Pacific Fisheries Management Council ([NPFMC](http://www.npfmc.org)). It is hoped that Gmacs will enable the Alaska Department of Fish and Game (ADFG) to greatly improve the development of assessment models for their crab stocks.
+
+The Gmacs project is now hosted online at https://seacode.github.io, along with three other projects running in support of, or parallel to, Gmacs. Those projects are:
+
+1. **`gmr`** an R package for plotting the results of Gmacs models; 
+2. **`Cstar`** an ADMB library of common stock assessment routines which are used inside Gmacs; and
+3. **`rstar`** an R package that facilitates plotting and understanding of Cstar functions.
+
+A presentation outlining the motivation behind Gmacs, its capabilities, and its intended use as part of an improved stock assessment process, can be accessed at: https://seacode.github.io/reports/2014-09-slides.pdf
+
+## Progress Summary 
+Great progress has been made on the Gmacs project over the 2014 summer. The Gmacs source code has recently undergone a complete re-write, resulting in the addition of new and improved functionality and better-documented code, and tools in support of Gmacs have been further developer and extended. The Gmacs project now has:
+
+1. An improved Github project page for collaborative model development: https://github.com/seacode/gmacs
+2. Recently re-written and re-designed core ADMB source code: https://github.com/seacode/gmacs/blob/develop/src/gmacs.tpl
+3. A user- and developer-guide in wiki format: https://github.com/seacode/gmacs/wiki
+4. A technical document in the form of a journal manuscript (currently a first-draft): https://github.com/seacode/gmacs/blob/develop/docs/manuscript/GLBAM.tex
+5. A supporting R package for producing plots from Gmacs output files: https://github.com/seacode/gmr
+6. A demonstration stock assessment model: https://github.com/seacode/gmacs/tree/develop/examples/demo
+7. An associated report: https://github.com/seacode/gmacs/tree/develop/docs/bbrkc
+
+Each link above provides access to more information regarding the project. As Gmacs is a live open-source project, many component parts and documents are incomplete, and are open to contributions from interested users and developers.
+
+### Gmacs
+The Gmacs modelling framework is now in full-testing stage and is being scrutinised via the development of an example assessment model for Bristol Bay Red King Crab (BBRKC). The process of developing an example assessment model has been an excellent learning exercise and has highlighted issues with both the Gmacs framework and the existing ADFG-BBRKC assessment model. Gmacs now satisfactorily reproduces the outputs of the existing ADFG-BBRKC assessment model, but further testing and development should be done before Gmacs is used in practice to assess BBRKC.
+
+Gmacs already has more features than required to reproduce the ADFG model for BBRKC, but may need further development before it can be used to produce assessment models for other stocks. Importantly, the newly improved source code is readily expandable, being structured and designed in a manner that facilitates further development, so adding the necessary extensions should be relative straight forward. The same development and review process that has been applied to the BBRKC model should thus be repeated for the Norton Sound Red King Crab (NSRKC) model, and then for other BSAI crab models.
+
+### Tools and Documentation
+Tools and documentation in support of Gmacs have recently been extended and improved. Both a user- and developer-guide are available online in the form of a Wiki and are developing as experience is gained with using the Gmacs modelling framework on different operating systems and for different purposes. Extra tools are being developed in support of Gmacs, including an ADMB function library `Cstar`, and an R Package `gmr` for producing plots and diagnostics. Together with Gmacs, these extra tools support a much improved stock assessment process. Gmacs and Cstar can be used to develop and run stock assessment models, and the supporting R package can be used to produce plots and diagnostics of Gmacs model outputs. These two tools can be used together with [RStudio](http://www.rstudio.com/) and [RMarkdown](http://rmarkdown.rstudio.com/) to produce standardized and easily updatable assessment reports. An example of this process has been developed and documented together with the example stock assessment model for BBRKC.
+
+## Next Steps
+Gmacs and its supporting software have been carefully designed such that expansion and further development can be continued by others. It is hoped that a new Research Associate will begin work on the Gmacs project in 2015 and work in collaboration with crab stock assessment authors to further improve the software. As the model and its associated software develop further, the Gmacs project will assist the NPFMC and ADFG to greatly improve the overall management of BSAI Crab Fisheries.
