@@ -3,14 +3,14 @@ title: "Gmacs Progress Report"
 author: "Athol R. Whitten, University of Washington"
 date: "September 2014"
 output:
-  word_document: default
+  html_document:
+    number_sections: no
+    theme: default
+    toc: yes
   pdf_document:
     highlight: zenburn
     number_sections: yes
-  html_document:
-    number_sections: yes
-    theme: flatly
-    toc: yes
+  word_document: default
 ---
 
 # Overview
